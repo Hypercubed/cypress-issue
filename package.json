@@ -1,0 +1,18 @@
+{
+  "name": "cypress-issue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "open": "cypress open",
+    "test": "cypress run"
+  },
+  "author": "Jayson Harshbarger",
+  "license": "MIT",
+  "dependencies": {
+    "cypress": "^7.1.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.2.4"
+  }
+}

@@ -1,0 +1,26 @@
+<body>
+  Hello
+  <div id="msg">
+
+  </div>
+  <br />
+  <button>Button</button>
+
+  <script>
+    const btn = document.querySelector('button');
+    const msg = document.querySelector('#msg');
+    btn.addEventListener('click', function(e) {
+      msg.innerHTML = 'World';
+
+      setTimeout(() => {
+        msg.innerHTML = '';
+      }, 2000);
+
+      // Simulating other JS running
+      const start = new Date();
+      while(new Date() - start < 1950) {
+        console.log("invoked")
+      }
+    }, false);
+  </script>
+</body>
